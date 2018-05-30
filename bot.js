@@ -386,8 +386,8 @@ function play(guild, song) {
 
 
 
-const adminprefix = "x";
-const devs = ['234454368072630283', '357290261409431552'];
+const adminprefix = "L";
+const devs = ['234454368072630283', '321620371495321602'];
  
 
 client.on('message', message => {
@@ -436,7 +436,44 @@ if (message.content.startsWith(adminprefix + 'st')) {
 });
 
 
+client.on("message", message => {
+ if (message.content === "Lhelp") {
+        message.react("✅")
+           message.react("📬")
+  const embed = new Discord.RichEmbed() 
+      .setColor("#ffff00")
+      .setDescription(`
+      ══════════ஜ۩۞۩ஜ════════════ 
 
+     🎵「أوامر بوت الاغاني」🎵
+ 
+.    
+     Lplay
+     امر تشغيل الأغنية , !شغل الرابط او اسم الأعنية
+     Lskip
+     تغير الأغنية
+     Lpause
+     ايقاف الأغنية
+     Lresume
+     مواصلة الأغنية
+     Lvol
+   لتغيير درجه الصوت 1-100
+     Lstop
+     خروج البوت من الروم
+      Lsetname
+     لتغيير اسم البوت
+     Lsetavatar
+     لتغيير صورة البوت
+ 
+
+══════════ஜ۩۞۩ஜ════════════ 
+ `)
+ 
+   message.author.sendEmbed(embed)
+    
+   }
+   }); 
+ 
 
 
 
