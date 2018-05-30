@@ -379,7 +379,7 @@ function play(guild, song) {
 
 
 
-	serverQueue.textChannel.send(`🎶 Start playing: **${song.title}**`);
+	serverQueue.textChannel.send(`🎶 دقيقه طال عمرك: **${song.title}**`);
 
 }
 
